@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Management System</h1>
+        
+        <div class="stats">
+            <h3>Total Contacts: <span id="contactCount">0</span></h3>
+        </div>
+
+        <div class="controls">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search contacts...">
+            </div>
+            <button class="addContact" onclick="openAddModal()">
+                + Add Contact
+            </button>
+        </div>
+
+        <div id="contactsContainer" class="contacts-grid"></div>
+        
+        <div id="emptyState" class="empty-state" style="display: none;">
+            <h3>No contacts found</h3>
+            <p>Add your first contact to get started!</p>
+        </div>
+    </div>
+
+    <!-- Add/Edit Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add New Contact</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="userName">User Name: </label>
+                    <input type="text" id="userName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Contact</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="dist/script.js"></script>
+</body>
+</html>
