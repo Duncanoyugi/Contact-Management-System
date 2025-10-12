@@ -1,0 +1,21 @@
+{
+  "name": "contact-management-system-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "build": "tsc",
+  "watch": "tsc --watch",
+  "start": "lite-server", 
+  "dev": "npm run build && npm run start"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.37.0",
+    "lite-server": "^2.6.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  }
+}
