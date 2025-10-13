@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "build": "tsc",
-  "watch": "tsc --watch",
-  "start": "lite-server", 
-  "dev": "npm run build && npm run start"
-},
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "lite-server",
+    "dev": "npm run build && npm run start"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
